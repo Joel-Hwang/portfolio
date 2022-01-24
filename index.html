@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<title>Joel Hwang</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif
+    }
+.scrollable {
+  overflow: auto; -webkit-overflow-scrolling: touch;
+}
+
+.more {
+    position: relative;
+    top: -33px;
+    text-align: center;
+    cursor: pointer ;
+}
+</style>
+<script>
+    if( (navigator.language || navigator.userLanguage) == 'ko-KR' ){
+       // window.location.href = "./index_ko.html";    
+    }
+</script>
+<body class="w3-light-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="./profile/profile.jpg" style="width:100%" alt="Gavin Hwang">
+                        <div class="w3-display-middle w3-display-left w3-container w3-text-black">
+                            <h2 lang="Korea">Joel Hwang</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Programmer</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Busan, South Korea</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>joel.c.hwang@gmail.com</p>
+                        <hr>
+
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                        <p>Java</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                        </div>
+                        <p>C#</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">
+                                <div class="w3-center w3-text-white">85%</div>
+                            </div>
+                        </div>
+                        <p>Javascript</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+                        </div>
+                        <p>SQL</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+                        </div>
+                        <br>
+
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                        <p>Korean</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-center w3-round-xlarge w3-teal" style="height:24px;width:100%">native</div>
+                        </div>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Software Developer / Changshin INC, South Korea</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p></p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Software Developer / Sejung INC, South Korea</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Apr 2020</h6>
+                        <p></p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Programming Analyst / LG CNS, South Korea</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2013 - Aug 2018</h6>
+                        <p></p>
+                        <hr>
+                    </div>
+                    <div class="more" onclick="document.querySelector('#oldWorkExp').classList.toggle('w3-hide')">
+                        <span class="w3-tag w3-teal w3-round-xlarge w3-small">More</span>
+                    </div>
+                    <div id="oldWorkExp" class="w3-hide" >
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Social Services / EMMAUS WELFARE CENTER, South Korea</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2012 - Jan 2013</h6>
+                            <p>Aide for the Developmentally Disabled.</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Coast Guard / South Korean Military, South Korea</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2007 - May 2009</h6>
+                            <p> </p><br>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Chonnam National University, South Korea</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2006 - Feb 2013</h6>
+                        <p>Computer Engineering</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Prize</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>CODE MONSTER : Algorithm Competition by LG CNS</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018</h6>
+                        <img src="profile/code_monster.jpg" style="width:100%; max-width: 550px"/>
+                        <hr>
+                    </div>
+                </div>
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Project</h2>
+                    
+                    <div class="w3-container" style="display: none">
+                        <h5 class="w3-opacity"><b>Sejung Inc Company Homepage</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p>Blank</p>
+                        <p> - Skills : Blank
+                            <hr>
+                    </div>
+                    
+                    <div class="w3-container" >
+                        <h5 class="w3-opacity"><b>Ship Store Project based on Hyperledger Fabric </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p>Blockchain </p>
+                        <p> - Skills : Blockchain
+                            <hr>
+                    </div>
+                    
+                    <div class="w3-container" >
+                        <h5 class="w3-opacity"><b>Devops toolchain Project</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Jul 2019</h6>
+                        <p>I made a shell file to install docker, docker-compose, gitlab, redmine, jenkins. </p>
+                        <p> - Skills : docker
+                            <hr>
+                    </div>
+                    
+                    <div class="w3-container" >
+                        <h5 class="w3-opacity"><b>Sejung InC Company Homepage</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Apr 2019</h6>
+                        <p>Sejung InC responseive web homapage project. My role was a developer.<br> <a href="http://www.sjinc.co.kr" target="_blank">http://www.sjinc.co.kr</a></p>
+                        <p> - Skills : Java (Spring Framework), JavaScript (jQuery), SQL(Postgres)
+                            <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>LearningPlus System Integration </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2018 - Jul 2018</h6>
+                        <p>Online Education System for LG CNS. My role was to solve performance issues.</p>
+                        <p> - Skills : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL)
+                            <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Fair Trade System Integration </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - Aug 2018</h6>
+                        <p>Technical documents sharing system among cowork companies. I was a project manager. </p>
+                        <p> - Skills : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL)
+                            <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Enterprise Portal System Management </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - May 2018</h6>
+                        <p>Currently managing this system which includes scheduling, room assignments, and the ability to search for client information.</p>
+                        <p> - Skills : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL)
+                            <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Enterprise Portal System Integration</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017 - Oct 2017</h6>
+                        <p> 1. Developed organization chart by using JStree that is able to search on client side. </p>
+                        <p> - Skills : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL) </p>
+                        <img src="./profile/add1.jpg" style="width:100%; max-width: 550px">
+                        <p> 2. Developed windows form program for synchronizing between Planner system and MS outlook. If a plan data is changed, the sync program detect that. And send the changed information to MS outlook server. </p>
+                        <p> - Skills : C#(.Net Framework), SQL(MSSQL) </p>
+                        <img src="./profile/add2.jpg" style="width:100%; max-width: 550px">
+                        <p> 3. Developed planner system for tablets. </p>
+                        <p> - Skills : Java(Devon Framework), SQL(MSSQL) </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Product Lifecycle System Management</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Jun 2017</h6>
+                        <p> 1. Managed system for manufacturing ATMs which includes ability to order parts, confirm quality and quantity, and upload schematics </p>
+                        <p> - Skills : Java(Devon Framework), SQL(Oracle) </p>
+                        <p> 2. PDA </p>
+                        <p> - Skills : C#(.Net Compact Framework), SQL(Oracle) </p>
+                        <img src="./profile/add5.jpg" style="width:100%">
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>VIVAPOST System Integration</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2013 - Jan 2015</h6>
+                        <p> In charge of PDA program for a postal service solution regarding scanning to confirm each step of the package delivery system as well as providing a signature directly on the PDA </p>
+                        <p> - Skills : C#(.Net Compact Framework), Java(Devon Framework) ,SQL(MSSQL) </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Korea Postal Service Management</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2013 - Aug 2013</h6>
+                        <p> Developed authentication module for use with telecommunication companies in which users can receive a code via SMS and submit via their telecommunication services for verification of identity </p>
+                        <p> - Skills : Java(Android) </p>
+                        <hr>
+                    </div>
+
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cubes fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Side Project</h2>
+                    <div class="w3-row w3-container">
+                        <div class="w3-col l6 m6 w3-white w3-padding-16">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Fridge</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Sep 2018</h6>
+                            <p> - Skills : Jquery, Web Speech API</p>
+                            <div style="padding-left: 0px;padding-top: 40px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                <iframe src="http://5789.tistory.com/15" style="width: 275px;height: 430px; border: 0px"></iframe>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="w3-col l6 m6 w3-white w3-padding-16">
+                            <h5 class="w3-opacity"><b><a href="http://gavinlab.com/magok/menu">Cafeteria</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Feb 2018</h6>
+                            <p> - Skills : Java(Spring), Jquery</p>
+                            <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                <iframe src="http://gavinlab.com/magok/menu" style="width: 242px;height: 460px; border: 0px"></iframe>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="w3-col l6 m6 w3-white w3-padding-16">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/13">Wedding invitation</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
+                            <p> - Skills : Html, CSS, Jquery</p>
+                            <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                <div class="scrollable" style="width: 242px;height: 440px;">
+                                <iframe src="http://5789.tistory.com/13" style="width: 242px;height: 440px; border: 0px"></iframe>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="w3-col l6 m6 w3-white w3-padding-16">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/14">Party invitation</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
+                            <p> - Skills : Html, CSS, Jquery</p>
+                            <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                <div class="scrollable" style="width: 242px;height: 440px;">
+                                <iframe src="http://5789.tistory.com/14" style="width: 242px;height: 440px; border: 0px"></iframe>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                   
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Release Helper</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Mar 2015</h6>
+                        <p> Windows form based program. Release Helper can find any files by using unique keyword. backup server files.</p>
+                        <p> - Skills : C#(.Net Framework)</p>
+                        <img src="./profile/add8.jpg" style="width:100%">
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Chonnam National University Application</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
+                        <p> Developed application for university student convenience which includes notice boards, lecture timetables, cafeteria menus, etc. </p>
+                        <p> - Skills : Java(Android, EE), SQL(MySQL) </p>
+                        <img src="./profile/add3.jpg" style="width:100%">
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>QUICKS Application</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
+                        <p> Developed scheduling application including the ability to store memos as well as set and start deadline countdowns </p>
+                        <p> - Skills : Java(Android), SQL(SQLITE3) </p>
+                        <img src="./profile/add4.jpg" style="width:100%">
+                        <hr>
+                    </div>
+                </div>
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p> </p><br><p></p>
+        <div style="display: none">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </footer>
+
+</body>
+
+</html>

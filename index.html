@@ -176,7 +176,7 @@ to {
                     <h3 class="w3-text-grey w3-padding-16 trigger" data-target="prj"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Project
                         <i class="fas fa-chevron-down"  style="margin-left: 5px; position: relative;top: 3px;"></i>
                     </h3>
-                    <div class="w3-container hidden disappear" id="prj">
+                    <div class="hidden disappear" id="prj">
                         <div class="w3-container" >
                             <h5 class="w3-opacity"><b>Electronic Document</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
@@ -242,6 +242,9 @@ to {
                                     사용자가 프로세스를 쉽게 그릴 수 있도록 draw.io 오픈소스를 도입하였다. <br>
                                     그리고 기존 legacy 시스템의 데이터를 사용해 입력 편의성을 향상시키고 데이터의 정합성을 향상시키기 위해
                                     커스터마이징 하였다. 업무 프로세스, 도면, 회의실 위치 등 다방면으로 활용 가능해 보인다.
+                                    <div>
+                                        <video src="./profile/drawiocustom.mp4" width="100%" controls></video>
+                                    </div>
                                 </div>
                                     <hr>
                             </div>
@@ -378,158 +381,155 @@ to {
                     <h3 class="w3-text-grey w3-padding-16 trigger" data-target="sideprj" ><i class="fa fa-cubes fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Side Project
                         <i class="fas fa-chevron-down" style="margin-left: 5px; position: relative;top: 3px;"></i>
                     </h3>
-                    <div class="w3-container hidden disappear" id="sideprj">
-                        <div class="w3-row w3-container">
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b>p9tion</b></h5>
-                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - Jan 2022</h6>
-                                <p> - Skills : Javascript, Html, CSS, Web Recognition API</p>
-                                <p class="w3-tag w3-dark-grey w3-round short" data-target="p9tion"></p>
-                                <div id="p9tion" class="hidden disappear">
-                                    <p>영어 발음 연습을 하기 위해 시작한 프로젝트이다. web speech recognition 모듈을 사용하여 발음을 컴퓨터가 인지하게 하였고<br>
-                                    내가 말했던 발음을 녹음하여 다시 들어볼 수 있는 기능을 추가하였다.</p>
-                                </div>
-                                <hr>
+                    <div class="hidden disappear" id="sideprj">
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>p9tion</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - Jan 2022</h6>
+                            <p> - Skills : Javascript, Html, CSS, Web Recognition API</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="p9tion"></p>
+                            <div id="p9tion" class="hidden disappear">
+                                <p>영어 발음 연습을 하기 위해 시작한 프로젝트이다. web speech recognition 모듈을 사용하여 발음을 컴퓨터가 인지하게 하였고<br>
+                                내가 말했던 발음을 녹음하여 다시 들어볼 수 있는 기능을 추가하였다.</p>
                             </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Erd Generator</a></b></h5>
-                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Dec 2021</h6>
-                                <p> - Skills : NodeJS,Javascript,MSSQL</p>
-                                <p class="w3-tag w3-dark-grey w3-round short" data-target="erdgen"></p>
-                                <div id="erdgen" class="hidden disappear">
-                                    쿼리 기반의 ERD를 자동으로 그려주는 프로젝트이다. ERD는 데이터의 흐름을 한눈에 볼 수 있는 아주 중요한 산출물임에도 불구하고<br>
-                                    자주 변하는 DB 스펙을 꾸준히 적용하기 어렵다. 기존 ERD 도구들은 테이블들의 연결관계(외래키 기반)를 가지고 ERD를 표현해 주지만<br>
-                                    많은 Legacy 시스템들이 운영의 효율성을 이유로 Foreign Key를 잘 사용하지 않아 ERD를 추적하기가 상당히 어렵다. 이 프로그램은 프로그램에 적혀 있는
-                                    쿼리를 기반으로 동작하며 쿼리 내용을 분석하여 테이블간의 연결관계를 파악하고 실제 데이터를 조회해 봄으로써 1:1인지 1:N인지 파악하고 ERD를 그려준다.
-                                </div>
-                                <hr>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Erd Generator</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Dec 2021</h6>
+                            <p> - Skills : NodeJS,Javascript,MSSQL</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="erdgen"></p>
+                            <div id="erdgen" class="hidden disappear">
+                                쿼리 기반의 ERD를 자동으로 그려주는 프로젝트이다. ERD는 데이터의 흐름을 한눈에 볼 수 있는 아주 중요한 산출물임에도 불구하고<br>
+                                자주 변하는 DB 스펙을 꾸준히 적용하기 어렵다. 기존 ERD 도구들은 테이블들의 연결관계(외래키 기반)를 가지고 ERD를 표현해 주지만<br>
+                                많은 Legacy 시스템들이 운영의 효율성을 이유로 Foreign Key를 잘 사용하지 않아 ERD를 추적하기가 상당히 어렵다. 이 프로그램은 프로그램에 적혀 있는
+                                쿼리를 기반으로 동작하며 쿼리 내용을 분석하여 테이블간의 연결관계를 파악하고 실제 데이터를 조회해 봄으로써 1:1인지 1:N인지 파악하고 ERD를 그려준다.
                             </div>
-                            <div class="w3-container">
-                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Voca</a></b></h5>
-                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - Mar 2021</h6>
-                                <p> - Skills : Jquery, Web Speech Recognition</p>
-                                <p class="w3-tag w3-dark-grey w3-round short" data-target="voca"></p>
-                                <div id="voca" class="hidden disappear">
-                                    영어 어휘를 늘릴 목적으로 시작한 프로젝트이다. 영어 단어와 한글 뜻을 사용자가 선택할 수 있고
-                                    문장은 어절로 끊어서 순서를 선택할 수 있다. 또한 마이크 버튼을 눌러서 실제 그 발음을 정확히 발음하고 컴퓨터가 인지하였는지 확인할 수 있다.
-                                    얼마나 맞았는지 점수를 매기고 어디가 틀렸는지 확인하고 점수 현황을 그래프로 보여주고 오답 목록을 보여준다.
-                                </div>
-                                <hr>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Voca</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - Mar 2021</h6>
+                            <p> - Skills : Jquery, Web Speech Recognition</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="voca"></p>
+                            <div id="voca" class="hidden disappear">
+                                영어 어휘를 늘릴 목적으로 시작한 프로젝트이다. 영어 단어와 한글 뜻을 사용자가 선택할 수 있고
+                                문장은 어절로 끊어서 순서를 선택할 수 있다. 또한 마이크 버튼을 눌러서 실제 그 발음을 정확히 발음하고 컴퓨터가 인지하였는지 확인할 수 있다.
+                                얼마나 맞았는지 점수를 매기고 어디가 틀렸는지 확인하고 점수 현황을 그래프로 보여주고 오답 목록을 보여준다.
                             </div>
-                            <div class="more trigger" data-target="oldSide">
-                                <span class="w3-tag w3-teal w3-round-xlarge w3-small">More</span>
-                            </div>
-                            <div id="oldSide" class="hidden disappear" >
-                                
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Editor JS Plugin</a></b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - Oct 2020</h6>
-                                    <p> - Skills : Javascript</p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="editorjs"></p>
-                                    <div id="editorjs" class="hidden disappear">
-                                    오픈소스 텍스트 에디터은 editorjs에 drawio프로그램을 플러그인으로 접목하였다. 기존 editorjs는 펜 툴이나 그래프 그리는 도구가 전무했지만
-                                    오픈소스인 draw.io를 플러그인으로 제작하여 배포함으로써 editorjs의 입력 편의를 향상시켰다.
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Fridge</a></b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Sep 2018</h6>
-                                    <p> - Skills : Jquery, Web Speech API</p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="fridge"></p>
-                                    <div id="fridge" class="hidden disappear">
-                                        냉장고에서 버려지는 음식이 많아 이를 해결하기 위한 목적으로 개발하였다. 간단한 CRUD 프로그램으로 Web Speech API를 사용하여 말로 데이터를 추가할 수 있도록 하였다.
-                                        <div style="padding-left: 0px;padding-top: 40px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                            <iframe src="http://5789.tistory.com/15" style="width: 275px;height: 430px; border: 0px"></iframe>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b><a href="http://gavinlab.com/magok/menu">Cafeteria</a></b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Feb 2018</h6>
-                                    <p> - Skills : Java(Spring), Jquery</p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="cafeteria"></p>
-                                    <div id="cafeteria" class="hidden disappear">
-                                        구내식당 메뉴를 보여주는 프로그램이다. 그날 사람들이 어떤 메뉴를 선택했는지에 따라 점수가 매겨지고 저장되어 다음에 메뉴를 선택할 떄 도움을 줄 수 있다.
-                                        <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                            <iframe src="http://gavinlab.com/magok/menu" style="width: 242px;height: 460px; border: 0px"></iframe>
-                                        </div>
-                                    </div>
-                                    
-                                    <hr>
-                                </div>
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/13">Wedding invitation</a></b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
-                                    <p> - Skills : Html, CSS, Jquery</p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="weddinginvit"></p>
-                                    <div id="weddinginvit" class="hidden disappear">
-                                        결혼식에 초대장을 좀 더 특별하게 만들고 싶어 시작하였다. 결혼식에 대한 정보 소개, 사진 표시 및 댓글 남기기 기능들을 넣었다.
-                                        <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                            <div class="scrollable" style="width: 242px;height: 440px;">
-                                            <iframe src="http://5789.tistory.com/13" style="width: 242px;height: 440px; border: 0px"></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                </div>
-    
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/14">Party invitation</a></b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
-                                    <p> - Skills : Html, CSS, Jquery</p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="partyinvit"></p>
-                                    <div id="partyinvit" class="hidden disappear">
-                                        행사 알림을 위한 포스터 프로그램이다.
-                                        <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                            <div class="scrollable" style="width: 242px;height: 440px;">
-                                            <iframe src="http://5789.tistory.com/14" style="width: 242px;height: 440px; border: 0px"></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b>Release Helper</b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Mar 2015</h6>
-                                    <p> - Skills : C#(.Net Framework)</p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="relaeseHelper"></p>
-                                    <div id="relaeseHelper" class="hidden disappear">
-                                        <p> Windows form based program. Release Helper can find any files by using unique keyword. backup server files.</p>
-                                        윈도우 프로그램으로 CI/CD를 사용할 수 없는 Legacy 시스템을 위해 개발하였다. 프로그램 수정을 할 때 어떤 요청으로 수정을 하는지
-                                        그 요청 번호를 주석으로 남기는데 변경된 파일만 서버로 반영해야 하기 때문에 휴먼 에러가 발생하기 쉽다. 이를 방지하기 위해 요청 번호로
-                                        변경된 프로그램 소스파일을 검색하고 해당 파일에 의해 컴파일된 파일을 찾아 서버와 같은 폴더 스트럭처를 구성해준다.
-                                        <img src="./profile/add8.jpg" style="width:100%">
-                                    </div>
-                                    
-                                    <hr>
-                                </div>
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b>Chonnam National University Application</b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
-                                    <p> - Skills : Java(Android, EE), SQL(MySQL) </p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="andCNU"></p>
-                                    <div id="andCNU" class="hidden disappear">
-                                        <p> Developed application for university student convenience which includes notice boards, lecture timetables, cafeteria menus, etc. </p>
-                                        <img src="./profile/add3.jpg" style="width:100%">
-                                    </div>
-                                    
-                                    <hr>
-                                </div>
-                                <div class="w3-container">
-                                    <h5 class="w3-opacity"><b>QUICKS Application</b></h5>
-                                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
-                                    <p> - Skills : Java(Android), SQL(SQLITE3) </p>
-                                    <p class="w3-tag w3-dark-grey w3-round short" data-target="quicks"></p>
-                                    <div id="quicks" class="hidden disappear">
-                                        <p> Developed scheduling application including the ability to store memos as well as set and start deadline countdowns </p>
-                                        <img src="./profile/add4.jpg" style="width:100%">
-                                    </div>
-                                    <hr>
-                                </div>
-                            </div>
+                            <hr>
+                        </div>
+                        <div class="more trigger" data-target="oldSide">
+                            <span class="w3-tag w3-teal w3-round-xlarge w3-small">More</span>
+                        </div>
+                        <div id="oldSide" class="hidden disappear" >
                             
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Editor JS Plugin</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - Oct 2020</h6>
+                                <p> - Skills : Javascript</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="editorjs"></p>
+                                <div id="editorjs" class="hidden disappear">
+                                오픈소스 텍스트 에디터은 editorjs에 drawio프로그램을 플러그인으로 접목하였다. 기존 editorjs는 펜 툴이나 그래프 그리는 도구가 전무했지만
+                                오픈소스인 draw.io를 플러그인으로 제작하여 배포함으로써 editorjs의 입력 편의를 향상시켰다.
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Fridge</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Sep 2018</h6>
+                                <p> - Skills : Jquery, Web Speech API</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="fridge"></p>
+                                <div id="fridge" class="hidden disappear">
+                                    냉장고에서 버려지는 음식이 많아 이를 해결하기 위한 목적으로 개발하였다. 간단한 CRUD 프로그램으로 Web Speech API를 사용하여 말로 데이터를 추가할 수 있도록 하였다.
+                                    <div style="padding-left: 0px;padding-top: 40px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                        <iframe src="http://5789.tistory.com/15" style="width: 275px;height: 430px; border: 0px"></iframe>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://gavinlab.com/magok/menu">Cafeteria</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Feb 2018</h6>
+                                <p> - Skills : Java(Spring), Jquery</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="cafeteria"></p>
+                                <div id="cafeteria" class="hidden disappear">
+                                    구내식당 메뉴를 보여주는 프로그램이다. 그날 사람들이 어떤 메뉴를 선택했는지에 따라 점수가 매겨지고 저장되어 다음에 메뉴를 선택할 떄 도움을 줄 수 있다.
+                                    <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                        <iframe src="http://gavinlab.com/magok/menu" style="width: 242px;height: 460px; border: 0px"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/13">Wedding invitation</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
+                                <p> - Skills : Html, CSS, Jquery</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="weddinginvit"></p>
+                                <div id="weddinginvit" class="hidden disappear">
+                                    결혼식에 초대장을 좀 더 특별하게 만들고 싶어 시작하였다. 결혼식에 대한 정보 소개, 사진 표시 및 댓글 남기기 기능들을 넣었다.
+                                    <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                        <div class="scrollable" style="width: 242px;height: 440px;">
+                                        <iframe src="http://5789.tistory.com/13" style="width: 242px;height: 440px; border: 0px"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/14">Party invitation</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
+                                <p> - Skills : Html, CSS, Jquery</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="partyinvit"></p>
+                                <div id="partyinvit" class="hidden disappear">
+                                    행사 알림을 위한 포스터 프로그램이다.
+                                    <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
+                                        <div class="scrollable" style="width: 242px;height: 440px;">
+                                        <iframe src="http://5789.tistory.com/14" style="width: 242px;height: 440px; border: 0px"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Release Helper</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Mar 2015</h6>
+                                <p> - Skills : C#(.Net Framework)</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="relaeseHelper"></p>
+                                <div id="relaeseHelper" class="hidden disappear">
+                                    <p> Windows form based program. Release Helper can find any files by using unique keyword. backup server files.</p>
+                                    윈도우 프로그램으로 CI/CD를 사용할 수 없는 Legacy 시스템을 위해 개발하였다. 프로그램 수정을 할 때 어떤 요청으로 수정을 하는지
+                                    그 요청 번호를 주석으로 남기는데 변경된 파일만 서버로 반영해야 하기 때문에 휴먼 에러가 발생하기 쉽다. 이를 방지하기 위해 요청 번호로
+                                    변경된 프로그램 소스파일을 검색하고 해당 파일에 의해 컴파일된 파일을 찾아 서버와 같은 폴더 스트럭처를 구성해준다.
+                                    <img src="./profile/add8.jpg" style="width:100%">
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Chonnam National University Application</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
+                                <p> - Skills : Java(Android, EE), SQL(MySQL) </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="andCNU"></p>
+                                <div id="andCNU" class="hidden disappear">
+                                    <p> Developed application for university student convenience which includes notice boards, lecture timetables, cafeteria menus, etc. </p>
+                                    <img src="./profile/add3.jpg" style="width:100%">
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>QUICKS Application</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
+                                <p> - Skills : Java(Android), SQL(SQLITE3) </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="quicks"></p>
+                                <div id="quicks" class="hidden disappear">
+                                    <p> Developed scheduling application including the ability to store memos as well as set and start deadline countdowns </p>
+                                    <img src="./profile/add4.jpg" style="width:100%">
+                                </div>
+                                <hr>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -538,7 +538,7 @@ to {
                     <h3 class="w3-text-grey w3-padding-16 trigger" data-target="workExp"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Work History
                         <i class="fas fa-chevron-down" style="margin-left: 5px; position: relative;top: 3px;"></i>
                     </h3>
-                    <div class="w3-container hidden disappear" id="workExp">
+                    <div class="hidden disappear" id="workExp">
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>Software Developer / Changshin INC, South Korea</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>

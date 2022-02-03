@@ -102,6 +102,33 @@ to {
     transform:rotate(360deg);
   }
 }
+
+@media screen and (min-width: 458px) { 
+    .phone { 
+        padding-top: 19px;
+        padding-left: 26px;
+        padding-right: 22px;
+        padding-bottom: 16px;
+        background-image: url(./profile/smartphone_1280.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    } 
+}
+
+@media screen and (max-width: 457px) { 
+    .phone { 
+        padding-top: 15px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 16px;
+        background-image: url(./profile/smartphone_1280.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+    } 
+}
+
 </style>
 <script>
     if( (navigator.language || navigator.userLanguage) == 'ko-KR' ){
@@ -390,6 +417,9 @@ to {
                             <div id="p9tion" class="hidden disappear">
                                 <p>영어 발음 연습을 하기 위해 시작한 프로젝트이다. web speech recognition 모듈을 사용하여 발음을 컴퓨터가 인지하게 하였고<br>
                                 내가 말했던 발음을 녹음하여 다시 들어볼 수 있는 기능을 추가하였다.</p>
+                                <div>
+                                    <video class="phone" src="./profile/p9tion.mp4"  controls style="max-width:419px; width:100%; "></video>
+                                </div>
                             </div>
                             <hr>
                         </div>

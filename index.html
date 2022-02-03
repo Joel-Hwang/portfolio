@@ -629,6 +629,7 @@ to {
                     let chevronDown = this.querySelector('i.fa-chevron-down');
                     if(target.classList.contains('disappear')){
                         target.classList.remove('disappear');
+                        target.classList.remove('hidden');
                         target.classList.add('appear');
                         if(span) span.textContent = 'Less';
                         if(chevronDown) chevronDown.classList.remove('flipdown');
@@ -636,6 +637,7 @@ to {
                     }else{
                         target.classList.remove('appear');
                         target.classList.add('disappear');
+                        target.classList.add('hidden');
                         if(span) span.textContent = 'More';
                         if(chevronDown) chevronDown.classList.remove('flipup');
                         if(chevronDown) chevronDown.classList.add('flipdown');

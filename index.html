@@ -182,6 +182,7 @@ to {
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Programmer</p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Busan, South Korea</p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>joel.c.hwang@gmail.com</p>
+                        <p><i class="fab fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/Joel-Hwang">https://github.com/Joel-Hwang</a></p>
                         <hr>
 
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -454,10 +455,20 @@ to {
                             <p> - Skills : NodeJS,Javascript,MSSQL</p>
                             <p class="w3-tag w3-dark-grey w3-round short" data-target="erdgen"></p>
                             <div id="erdgen" class="hidden disappear">
+                                Entity Relationship Diagram Generator<Br>
+                                There are barely foreign keys in some Legacy Systems even though foreign keys are quite important to analyze data structure.<Br>
+                                But we know there are logical relationships in the queries like join.<Br>
+                                So this project generate an erd diagram from queries. It analyzes queries to get the tables and the relationships.<Br>
+                                Then, select some data from the tables to figure out how they related like 1:1, 1:N, N:N.<Br>
+                                By using that information, it will draw the erd diagram.<Br>
+
                                 쿼리 기반의 ERD를 자동으로 그려주는 프로젝트이다. ERD는 데이터의 흐름을 한눈에 볼 수 있는 아주 중요한 산출물임에도 불구하고<br>
                                 자주 변하는 DB 스펙을 꾸준히 적용하기 어렵다. 기존 ERD 도구들은 테이블들의 연결관계(외래키 기반)를 가지고 ERD를 표현해 주지만<br>
                                 많은 Legacy 시스템들이 운영의 효율성을 이유로 Foreign Key를 잘 사용하지 않아 ERD를 추적하기가 상당히 어렵다. 이 프로그램은 프로그램에 적혀 있는
                                 쿼리를 기반으로 동작하며 쿼리 내용을 분석하여 테이블간의 연결관계를 파악하고 실제 데이터를 조회해 봄으로써 1:1인지 1:N인지 파악하고 ERD를 그려준다.
+                                <div>
+                                    <video src="./profile/erdGen.mp4"  controls style="width:100%; "></video>
+                                </div>
                             </div>
                             <hr>
                         </div>

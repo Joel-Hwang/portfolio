@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-<title>황 철</title>
+<html lang="en">
+<title>Joel Hwang</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <style>
     html,
     body,
@@ -20,7 +20,146 @@
 .scrollable {
   overflow: auto; -webkit-overflow-scrolling: touch;
 }
+
+.more {
+    position: relative;
+    top: -33px;
+    text-align: center;
+    cursor: pointer ;
+}
+
+.trigger {
+    cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.appear {
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+  display: block;
+}
+
+.disappear {
+  animation: fade-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.short:after {
+    font-weight: bold; 
+    letter-spacing: 5px;
+    padding-left: 5px;
+    content: '···';
+    cursor: pointer;
+}
+
+.flipup{
+    animation: flipup .5s forwards;
+}
+
+.flipdown{
+    animation: flipdown .5s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes flipup {
+  from {
+    transform:rotate(0deg);
+    
+}
+to {
+    transform:rotate(180deg);
+  }
+}
+
+@keyframes flipdown {
+  from {
+    transform:rotate(180deg);
+    
+}
+to {
+    transform:rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 541px) { 
+    .phone { 
+        padding-top: 19px;
+        padding-left: 25px;
+        padding-right: 22px;
+        padding-bottom: 16px;
+        background-image: url(./profile/smartphone_1280.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    } 
+}
+
+@media screen and (max-width: 540px) { 
+    .phone { 
+        padding-top: 15px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 16px;
+        background-image: url(./profile/smartphone_1280.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+    } 
+}
+
+@media screen and (max-width: 460px) { 
+    .phone { 
+        padding-top: 10px;
+        padding-left: 17px;
+        padding-right: 23px;
+        padding-bottom: 10px;
+        background-image: url(./profile/smartphone_1280.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 35px;
+    } 
+}
+
+@media screen and (max-width: 390px) { 
+    .phone { 
+        padding-top: 10px;
+        padding-left: 13px;
+        padding-right: 12px;
+        padding-bottom: 10px;
+        background-image: url(./profile/smartphone_1280.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+    } 
+}
 </style>
+<script>
+    if( (navigator.language || navigator.userLanguage) == 'ko-KR' ){
+       // window.location.href = "./index_ko.html";    
+    }
+</script>
 <body class="w3-light-grey">
 
     <!-- Page Container -->
@@ -34,19 +173,20 @@
 
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
-                        <img src="./profile/profile.jpg" style="width:100%" alt="Gavin Hwang">
+                        <img src="./profile/profile.jpg" style="width:100%" alt="Joel Hwang">
                         <div class="w3-display-middle w3-display-left w3-container w3-text-black">
-                            <h2>황 철</h2>
+
+                            <h2 lang="Korea">황철</h2>
                         </div>
                     </div>
                     <div class="w3-container">
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>웹 개발자</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>대한민국 부산 광역시</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>대한민국, 부산</p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>joel.c.hwang@gmail.com</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>010 - 4247 - 4507</p>
+                        <p><i class="fab fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/Joel-Hwang">https://github.com/Joel-Hwang</a></p>
                         <hr>
 
-                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>보유기술</b></p>
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
                         <p>Java</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
                             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
@@ -67,7 +207,11 @@
                         </div>
                         <br>
 
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>외국어</b></p>
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                        <p>한국어</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-center w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                        </div>
                         <p>영어</p>
                         <div class="w3-light-grey w3-round-xlarge">
                             <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
@@ -83,195 +227,539 @@
             <div class="w3-twothird">
 
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>경력</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>개발자 / 세정아이앤씨, South Korea</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-                        <p></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Programming Analyst / LG CNS</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013.01 - 2018.08</h6>
-                        <p></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>장애인 활동보조인 / 엠마우스 복지센터</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012.01 - 2013.01</h6>
-                        <p>도움이 필요한 중증 지적장애인 생활 보조 활동</p>
-                        <hr>
+                    <h3 class="w3-text-grey w3-padding-16 trigger" data-target="prj"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Project
+                        <i class="fas fa-chevron-down"  style="margin-left: 5px; position: relative;top: 3px;"></i>
+                    </h3>
+                    <div class="hidden disappear" id="prj">
+                        <div class="w3-container" >
+                            <h5 class="w3-opacity"><b>MS Office Add-in Project</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p> - Skills : C#, Javascript, MSSQL</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="ExcelAddin"></p>
+                            <div id="ExcelAddin" class="hidden disappear">
+                                 <!--I participated in the project that makes microsoft office add-in programs for the deliverables documents by production developing.
+                                <br> I suggested to use office add-in programs and I was in charge of system design, developing and maintenance.
+                                <br><br> The company has some needs to use the data from the deliverables for making business decisions. For that we need to provide better user experiences and collect valid data for the needs.
+                                First of all, we designed the office add-in programs like smart phone applications to provide better user experiences.
+                                <br>And we also made web based applications to show the deliverables preview and collected data to help business decisions.
+                                <br><br>
+                                At first, we just made web applications that the users can input data. It worked well to collect data but the users had to give up the convinient functions in MS office programs.
+                                It made terrible work efficiency and it was hard to update the programs because the deliverables format was changed frequently. 
+                                <br>So we decided to make MS office add-in programs that users still can use MS office programs and they would be more convient.
+                                <br> As a result, the users could make the documents easily and we collected data for data driven decision. -->
+
+                               
+                               제품 개발 과정에서 나온 산출물 문서들을 전산화 하기 위해 엑셀 등의 오피스 프로그램에 애드 인 기능을 추가하는 프로젝트를 수행하였다.
+                               <br>이 프로젝트에서 제안, 설계, 개발, 운영을 담당하였다.
+
+                            <br><br>산출물의 데이터를 사용하여 Data에 기반한 의사결정을 위해 진행된 프로젝트였고 기존 오피스 프로그램을 사용할 때보다 더 나은 사용자 경험을 제공하면서 의사결정에 도움줄 수 있는
+                            의미있는 데이터를 수집해야 했다. 사용자에게 익숙한 경험을 제공하기 위해 스마트폰 애플리케이션과 유사한 형태의 레이아웃을 선택하였으며 수집된 데이터를 효과적으로 보여주기 위해
+                            웹 기반 프로그램을 따로 제작하였다.
+
+                            <br>처음에는 엑셀 등의 프로그램에서 입력하던 데이터를 바로 웹 브라우저에서 입력할 수 있도록 프로그램을 제작하였으나 엑셀에서 제공하는 입력 편의 기능등을 포기하니 사용자의 작업 효율이
+                            현저하게 떨어지고 빈번하게 변경되는 산출물의 포맷을 대응하는게 무리라고 판단하여 오피스 프로그램의 포맷을 그대로 가져가면서 데이터 수집에 필요한 기능만 추가하여 사용자 경험을 헤치지 않고
+                            데이터도 목적에 맞게 수집할 수 있었다.
+                                <div>
+                                    <video src="./profile/addinsample.mp4" width="100%" controls></video>
+                                </div>
+                            </div>
+                                <hr>
+                        </div>
+                        <div class="w3-container" >
+                            <h5 class="w3-opacity"><b>KPI(Key Performance Indicator) System</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020 - Apr 2020</h6>
+                            <p> - Skills : Golang, NodeJS, Javascript, Couch DB</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="kpi"></p>
+                            <div id="kpi" class="hidden disappear">
+                                <!--I participated in the kpi management system. The managers evaluates the employers performance every year based on the company rules. 
+                                <br>I was in charge of planning, system design and developing. 
+                                <br><br>The kpi data of employers should be private. So unauthorized people should't retrieve the data even the system manager.
+                                And we chose Hyperledger fabric, a private blockchain to prevent manipulate data.
+                                <br> We made the evaluation data as a block and then have trusted organizations have the same ledger to increase data reliability 
+                                and use an asymmetric key-based encryption algorithm so that even system administrators cannot retrive private data.
+                                <br>Also almost of the employers are outsorcing developers so we made a survey program for the clients.-->
+
+                                임직원들의 성과를 평가할 수 있는 KPI 시스템 구축 프로젝트를 수행하였다.
+                               <br>이 프로젝트에서 기획, 설계, 개발을 담당하였다.
+
+                                <br><br>성과 평가 결과는 임직원에게 매우 중요한 데이터이기 때문에 시스템 관리자라고 할지라도 허가된 외의 인원이 조회할 수 없어야 했다. 그리고 데이터 조작에 대한
+                                가능성을 줄이기 위해 프라이빗 블록체인 플랫폼인 하이퍼레저 패브릭을 사용하여 프로젝트를 진행하였다.
+                                
+                                <br>평가 데이터를 블록화한 후 신뢰할 수 있는 기관들이 동일한 원장을 갖게 함으로써 데이터 신뢰성을 높이고 비대칭키 기반의 암호화 알고리즘을 사용하여 관리자라고 할지라도
+                                개인의 민감 데이터를 조화할 수 없도록 설계하였다.
+                                
+                                또한 임직원들이 아웃소싱 개발을 주 업무로 하였기 때문에 외부 클라이언트에 의한 평가를 위해설문조사 시스템도 함께 개발하였다.
+                                <div>
+                                    <video src="./profile/kpi.mp4" width="100%" controls></video>
+                                </div>
+                            </div>
+                                <hr>
+                        </div>
+                        <div class="w3-container" >
+                            <h5 class="w3-opacity"><b>Devops toolchain Project</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Jul 2019</h6>
+                            <p> - Skills : docker, Linux Shell Script</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="devops"></p>
+                            <div id="devops" class="hidden disappear">
+                                 <!--I participated in the project that makes company policies about managing software.
+                                <br> I was in charge of system design and developing.
+                                <br><br> I made a shell file to install gitlab, svn, redmine, jenkins set according the the company's rules on docker.
+                                <br> I let the users can choose Svn or Gitlab as a sourcecode repository and choose Redmine as issue tracker system because it support Korean version compared to other issue tracker solutions.
+                                And choose Jenkins as ci/cd tool because it is popular so there are plenty references. And I wrote some deployment script examples.
+                                <br> Also I made a guide document about managing the issues of the project by connecting Redmine and IDE(Eclipse, IntelliJ).
+                               -->
+                                아웃소싱 개발자들이 프로젝트를 잘 수행할 수 있도록 프로젝트 관리정책을 수립하는 프로젝트를 수행하였다.
+                                <br>이 프로젝트에서 설계, 개발을 담당하였다.
+                                
+                                <br><br>Docker 기반의 미리 설정된 Gitlab, Redmine, Jenkins를 한번에 설치하고 바로 사용할 수 있게 쉘 프로그램 작성 배포하였다.<br>
+                                소스 코드 저장소는 Gitlab과 SVN중 선택할 수 있게 하였으며, 이슈 트랙커는 한글 지원이 비교적 원활한 Redmine을 선택하였다.<br>
+                                그리고 지속적인 배포를 위한 도구로 많이 알려진 Jenkins를 선택하고 CI/CD 배포 스크립트를 제작하였다.
+                                또 자바 IDE인 Eclipse와 IntelliJ를 Redmine 및 Jenkins에 연동하여 프로젝트의 이슈 관리를 효과적으로 할 수 있게 하였다.
+                                <div>
+                                    <video src="./profile/gs25ci.mp4" width="100%" controls></video>
+                                </div>
+                            </div>
+                                <hr>
+                        </div>
+                        
+                        <div class="more trigger" data-target="oldPrj">
+                            <span class="w3-tag w3-teal w3-round-xlarge w3-small">More</span>
+                        </div>
+                        <div id="oldPrj" class="hidden disappear" >
+                            <div class="w3-container" >
+                                <h5 class="w3-opacity"><b>Draw.io customiztion</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - July 2021</h6>
+                                <p> - Skills : Java, C#, Javascript, MSSQL</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="drawIo"></p>
+                                <div id="drawIo" class="hidden disappear">
+                                    <!--I participated in the project that makes diagrams and connected to the legacy systems. To shorten period, We chose draw.io, open source solution that support to draw diagrams.
+                                    <br>I was in charge of the system design and developing.
+                                    <br><br>
+                                    I customized draw.io solution so the users can make a diagram by using the legacy system's data and save the diagram data to the legacy system database.
+                                    <br>
+                                    It seems to be used for work process diagram, factory drawing and company layout. -->
+
+
+                                    기존 레거시 시스템과 연동할 수 프로세스 도식화 프로그램을 제작하는 프로젝트를 수행하였다. 기간 단축을 위해 프로세스를 쉽게 그릴 수 있고 기존 레서 시스템과 연결도 가능한 draw.io 오픈소스를 선택하였다.
+                                    <br>이 프로젝트에서 설계, 개발을 담당하였다.
+                                     <br><br>
+                                    기존 레거시 시스템의 데이터를 사용해 입력 편의성을 향상시키고 draw.io의 프로세스 데이터도 DB화 시키기 위해 커스터마이징 하였다. 
+                                    업무 프로세스, 공장 도면, 회사 구조 및 회의실 위치 등 다방면으로 활용 가능해 보인다.
+                                    <div>
+                                        <video src="./profile/drawiocustom.mp4" width="100%" controls></video>
+                                    </div>
+                                </div>
+                                    <hr>
+                            </div>
+                            <div class="w3-container" >
+                                <h5 class="w3-opacity"><b>PLM(Product Lifecycle Management)</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                                <p> - Skills : C#, Javascript, MSSQL, Oracle</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="plm"></p>
+                                <div id="plm" class="hidden disappear">
+                                    <!--I participated in the plm project that manages production developing data.
+                                    <br>I was in charge of the interface module with legacy systems and engineering part.
+                                    <br><br>
+                                    Until now, The employers have been communicated by relying on office document programs and e-mails about many parts of product development without a system.
+                                    <br>So there were a lot of cases where work became inefficient like track the latest document, missing emails.
+                                    <br>This could lead to a problem of weakening of production capacity. It is not good for manufactring companies.
+                                    So we did the plm project to manage data better and make the users work in smart way.-->
+
+
+                                    제품 개발 단계의 데이터를 효율적으로 관리하기 위한 Aras Innovator 기반의 PLM 프로젝트를 수행하였다.
+                                    <br>이 프로젝트에서 엔지니어링과 레거시 인터페이스 파트에 대한 개발 및 운영을 담당하였다.
+                                    <br><br>
+                                    그동안 제품을 개발함에 있어 많은 부분을 시스템이 없이 오피스 문서 프로그램과 이메일에 의존해 의사소통을 해왔다. 그러다 보니 빈번하게 변경되는 사항에 대해
+                                    버전관리도 잘 되지 않고 데이터 정합성도 맞지 않아 일이 비효율적으로 되는 경우가 매우 많았다. 이는 생산력의 약화라는 문제로까지 이어져 제조회사 입장에선
+                                    경쟁력의 저하를 초래할 수 있었다. <br>
+                                    이에 제조산업에선 많이 쓰고 있는 PLM을 도입하여 커스터마이징 함으로써 데이터를 체계적으로 관리하고 일을 효율적으로 진행할 수 있게 하였다.
+                                </div>
+                                    <hr>
+                            </div>
+                            
+                            <div class="w3-container" >
+                                <h5 class="w3-opacity"><b>Ship Store Project based on Hyperledger Fabric </b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Mar 2020</h6>
+                                <p> - Skills : Golang, NodeJS, Couch DB</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="blossom"></p>
+                                <div id="blossom" class="hidden disappear">
+                                     <!--I participated in the project that is Blockchain (HyperLedger Fabric) based online shopping mall project.
+                                    <br> I was in charge of the blockchain system api design and developing.
+                                    <br><br>Actually, we knew blockchain data is reliable contract, but the performance is now awesome like other online shopping malls.
+                                    So we targeted the shipping stuff mall.
+                                    <br> I made the blockchain apis of users inforamtion, productions information and deal information that was used by the online mall system.
+                                    we collaborated with the company that made the online mall system and the laboratory of the university that made productions recommandation system by A.I.
+                                    -->
+                                    블록체인 기반의 선적 용품을 중점으로 한 온라인 쇼핑몰 프로젝트를 수행하였다.
+                                    <br>이 프로젝트에서 블록체인 파트 및 API 설계, 개발을 담당하였다.
+                                    <br><br>
+                                    블록체인이 신뢰할 수 있는 거래를 보장해주지만 다른 온라인 쇼핑몰같은 성능을 기대하기는 어렵다. 그렇기 때문에 선용품이라는 대상을 타겟팅 하였다.
+                                    쇼핑몰 구현 업체에게 사용자 정보, 뭂품 정보, 거래 정보등을 입출력 할 수 있는 RestAPI를 제공하여 협업하였고 특정 상품 및 유저에 대하 관련 상품을 
+                                    인공지능으로 추천하는 대학의 연구실과 협업하였다.
+                                </div>
+                                <hr>
+                            </div>
+                        
+                            <div class="w3-container" >
+                                <h5 class="w3-opacity"><b>Sejung INC Company Homepage</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Apr 2019</h6>
+                                <p> - Skills : Java, JavaScript, PostgreSQL</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="sjinchomepage"></p>
+                                <div id="sjinchomepage" class="hidden disappear">
+                                    <!--I participated in the project that is renewal the hompage of Sejung INC.
+                                    <br> I was in charge of the system design and developing.-->
+                                    
+                                    세정 INC 회사의 반응형 홈페이지 리뉴얼 프로제트를 수행하였다.
+                                    <br>이 프로젝트에서 설계, 개발을 담당하였다.
+                                    
+                                    <br><br>홈페이지 리뉴얼에 대한 퍼블리싱, 자주 변경될 수 있는 데이터의 DB설계 및 기능구현 그리고 CI/CD에 사용할 배포 스크립트를 작성하였다.
+                                    <div>
+                                        <video src="./profile/sjinc.mp4" width="100%" controls></video>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>LearningPlus System Integration </b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2018 - Jul 2018</h6>
+                                <p> - Skills : Java, JavaScript, MSSQL</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="lnd"></p>
+                                <div id="lnd" class="hidden disappear">
+                                    <!--I participated in the project that is renewal online education system for the employers.
+                                    <br>I was in charge of some performance issues and interface with other company's systems.
+
+                                    <br><br>To solve the performance issue, I made a communication list between server and client sorted by performance time.
+                                    And I categorized data that is possible reuse or not. 
+                                    For reusable data I saved them in the cache area. For other ones I analyzed the sql query plan, and modify it to have better performance. 
+                                    -->
+                                    
+                                    사내 임직원들을 위한 온라인 교육 시스템 재구축 프로젝트를 수행하였다.
+                                    <br>이 프로젝트에서 메인화면에 대한 BackEnd 및 타 시스템 인터페이스를 담당하였다.
+
+                                    <br><br>프로젝트 진행되는 중간에 메인 화면의 속도 이슈를 해결하기 위해 참여하였고
+                                    리퀘스트 분석중 지연 시간이 많이 발생하는 항목울 분석, 재활용 가능한 데이터 목록을 추출하여 캐쉬화, SQL 쿼리 튜닝을 통해 속도를 비약적으로 향상시켰다.
+                                    또한 외부 온라인 교육 업체의 교육 컨텐츠를 제공하기 위해 데이터 인터페이스를 위한 설계 및 개발을 수행하였다.
+                                    
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Fair Trade System Integration </b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - Aug 2018</h6>
+                                <p> - Skills : Java, JavaScript, MSSQL</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="fairtrade"></p>
+                                <div id="fairtrade" class="hidden disappear">
+                                    <!--I participated in the project was was technical documents sharing system among cowork companies.
+                                    <br>I was in charge of the system design and developing.
+
+                                    <br><br>The application is for the fair trade between big companies and small companies.
+                                    South Korea court changes some rules about trade data among big and small companies to protected small companies.
+                                    Sometimes big company took some documents and use them for their products.
+                                    For the fair trade, we made the users should register about meetings, and manage the sharing technical documents that gaurante the owner. 
+                                    -->
+                                    중소기업과 대기업간의 공정한 거래를 보장하기 위한 시스템을 구축하는 프로젝트를 수행하였다.
+                                    <br>이 프로젝트에서 설계, 개발을 담당하였다.
+
+                                    <br><br>타 기업과 거래를 위한 미팅 진행시 일정에 등록하여 어디의 누구와 미팅을 진행하는지 추적할 수 있게 하였고 산출물 및 필요한 파일이나 거래 내용들을 관리할 수 있게 하였다.
+                                   
+                                </div>
+                                    <hr>
+                            </div>
+                            
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Enterprise Portal System</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017 - May 2018</h6>
+                                <p> - Skills : Java, C#, JavaScript, MSSQL </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="epsi"></p>
+                                <div id="epsi" class="hidden disappear">
+                                    <div>
+                                        <!--I participated in the group ware renewal project.
+                                        <br>I developed organization chart, MS outlook interface and the meeting rooms management program. Also I was in charge of maintenance.
+                                        -->
+                                        그룹 웨어 리뉴얼 프로젝트를 수행하였다.
+                                        <br>이 프로젝트에서 조직도, MS outlook 동기화, 미팅룸 태블릿 프로그램등을 개발하였고 전반적인 사항을 운영하였다.
+                                    </div>
+                                    <p> 1. 클라이언트 사이드에서 동작하는 JSTree 기반 조직도를 개발하였다. </p>
+                                    <img src="./profile/add1.jpg" style="width:100%; max-width: 550px">
+                                    <p> 2. 내부 플래너 시스템과 MS Outlook을 동기화하는 인터페이스 프로그램을 개발하였다. </p>
+                                    <img src="./profile/add2.jpg" style="width:100%; max-width: 550px">
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Product Lifecycle System Management</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Jun 2017</h6>
+                                <p> - Skills : Java, C#, Oracle, SQLite </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="plmsm"></p>
+                                <div id="plmsm" class="hidden disappear">
+                                    <p> 1. 개발단계의 제품을 관리하는 PLM 유지보수를 담당하였다. 파트 채번, BOM생성, 설계변경 요청, 설계 변경, SAP 인터페이스 등을 담당하였다. 
+                                    </p>
+                                    <p> 2. 생산에 필요한 바코드 스캔 및 데이터 연동, 블루투스 프린트 바코드 라벨 출력 등을 개발하였다.
+                                    </p>
+                                    <img src="./profile/add5.jpg" style="width:100%">
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>VIVAPOST System Integration</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2013 - Jan 2015</h6>
+                                <p> - Skills : C#, Java ,MSSQL </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="vivapda"></p>
+                                <div id="vivapda" class="hidden disappear">
+                                    <p> 우편물류 솔루션 VIVAPOST의 PDA모듈을 개발했습니다. 택배접수, 배달, 운송 프로세스, 택배 추적, 직원관리 등을 담당하였습니다. </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Korea Postal Service Management</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2013 - Aug 2013</h6>
+                                <p> - Skills : Java(Android) </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="kpostsm"></p>
+                                <div id="kpostsm" class="hidden disappear">
+                                    <p> 안드로이드 프로그램 유지보수하였습니다. 회원관리, SMS연동 등 전반적인 모듈을 담당하였습니다. </p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>학력</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>전남대학교</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006.03 - 2013.02</h6>
-                        <p>컴퓨터 공학 전공</p>
+                    <h3 class="w3-text-grey w3-padding-16 trigger" data-target="sideprj" ><i class="fa fa-cubes fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Side Project
+                        <i class="fas fa-chevron-down" style="margin-left: 5px; position: relative;top: 3px;"></i>
+                    </h3>
+                    <div class="hidden disappear" id="sideprj">
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>p9tion</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2022 - Jan 2022</h6>
+                            <p> - Skills : Javascript</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="p9tion"></p>
+                            <div id="p9tion" class="hidden disappear">
+                                <!--I stated this to practice my English p9tion(pronounciation). 
+                                I used the speech recognition modules to make the computer show what I said. Also add the record player to listen that I said and compare.
+                                -->
+                                <p>영어 발음 연습을 하기 위해 시작한 프로젝트이다. web speech recognition 모듈을 사용하여 발음을 컴퓨터가 인지하게 하였고<br>
+                                내가 말했던 발음을 녹음하여 다시 들어볼 수 있는 기능을 추가하였다.</p>
+                                <div>
+                                    <video src="./profile/p9tion.mp4" controls style="width:100%;"></video>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Erd Generator</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Dec 2021</h6>
+                            <p> - Skills : NodeJS,Javascript,MSSQL</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="erdgen"></p>
+                            <div id="erdgen" class="hidden disappear">
+                                <!--I used to have hard time the lack of ERD whenever I maintained some legacy systems in South Korea.
+                                There are barely foreign keys in some Systems even though foreign keys are quite important to analyze data structure.<Br>
+                                But we know there are logical relationships in the queries like join. And the queries are in the program source code.<Br>
+                                So this project generate an erd diagram from queries. It analyzes queries to get the tables and the relationships.<Br>
+                                Then, select some data from the tables to figure out how they related like 1:1, 1:N, N:N.<Br>
+                                By using that information, it will draw the erd diagram.<Br>-->
+
+                                
+                                새로운 레거시 시스템을 운영할 때마다 현행에 맞게 그려진 ERD가 없어 업무 분석에 애를 먹곤 했었다. 그 점을 해소하기 위해 시작하였다.
+                                이 프로젝트는 쿼리 기반의 ERD를 자동으로 그려주는 프로젝트이다. ERD는 데이터의 흐름을 한눈에 볼 수 있는 아주 중요한 산출물임에도 불구하고<br>
+                                자주 변하는 DB 스펙을 꾸준히 적용하기 어렵다. 기존 ERD 도구들은 테이블들의 연결관계(외래키 기반)를 가지고 ERD를 표현해 주지만<br>
+                                많은 Legacy 시스템들이 운영의 효율성을 이유로 Foreign Key를 잘 사용하지 않아 ERD를 추적하기가 상당히 어렵다. 이 프로그램은 프로그램에 적혀 있는
+                                쿼리를 기반으로 동작하며 쿼리 내용을 분석하여 테이블간의 연결관계를 파악하고 실제 데이터를 조회해 봄으로써 1:1인지 1:N인지 파악하고 ERD를 그려준다.
+                                <div>
+                                    <video src="./profile/erdGen.mp4"  controls style="width:100%; "></video>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Voca</a></b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - Mar 2021</h6>
+                            <p> - Skills : Jquery, Web Speech Recognition</p>
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="voca"></p>
+                            <div id="voca" class="hidden disappear">
+                                <!--I started this project to study english vocabulary. In the first section, the user should match english and korean words.
+                                And the second section, the user make right sentences from mixed blocks. After submit, the user can see the score, check the graph and see the wrong answer list to practice again.
+                                -->
+                                
+                                영어 어휘를 늘릴 목적으로 시작한 프로젝트이다. 영어 단어와 한글 뜻을 사용자가 선택할 수 있고
+                                문장은 어절로 끊어서 순서를 선택할 수 있다. 또한 마이크 버튼을 눌러서 실제 그 발음을 정확히 발음하고 컴퓨터가 인지하였는지 확인할 수 있다.
+                                얼마나 맞았는지 점수를 매기고 어디가 틀렸는지 확인하고 점수 현황을 그래프로 보여주고 오답 목록을 보여준다.
+                                <div>
+                                    <video class="phone" src="./profile/voca.mp4"  controls style="max-width:419px; width:100%; "></video>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="more trigger" data-target="oldSide">
+                            <span class="w3-tag w3-teal w3-round-xlarge w3-small">More</span>
+                        </div>
+                        <div id="oldSide" class="hidden disappear" >
+                            
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">Editor JS Plugin</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - Oct 2020</h6>
+                                <p> - Skills : Javascript</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="editorjs"></p>
+                                <div id="editorjs" class="hidden disappear">
+                               <!-- I stated this when I tried to use Editor js the opensource text editor program at work. I wanted the text editor include to draw diagrams function.
+                                I knew drawio will be good with editorjs and it is also open source program. So I made the plug-in program of editor js to draw diagrams. 
+                                -->
+                                
+                                텍스트 에디터 오픈 소스로 editorjs를 회사 프로그램에 적용하던 도중 editorjs에 프로세스를 그리는 기능이 있으면 좋겠다 싶어서 시작한 프로젝트이다.
+                                오픈소스 텍스트 에디터은 editorjs에 drawio프로그램을 플러그인으로 접목하였다. 기존 editorjs는 펜 툴이나 그래프 그리는 도구가 전무했지만
+                                오픈소스인 draw.io를 플러그인으로 제작하여 배포함으로써 editorjs의 입력 편의를 향상시켰다.
+                                    <div>
+                                        <video src="./profile/editorjsdrawio.mp4"  controls style="width:100%; "></video>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://gavinlab.com/magok/menu">Cafeteria</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - Feb 2018</h6>
+                                <p> - Skills : Java, Javascript, MariaDB</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="cafeteria"></p>
+                                <div id="cafeteria" class="hidden disappear">
+                                    <!--I started this to make a better decision of my lunch menu. There were bunch of different menu in the cafeteria and I was so curious what menu was the most chosen one.
+                                    So I made the program to connect to the menu service and collect data to show thme the way what I wanted.
+                                    -->
+                                    회사에서 제공되는 점심 메뉴가 너무 많아 좋은 메뉴를 선택하고 싶어 시작한 프로젝트이다. 
+                                    그날 제공되는 메뉴를 보여주고 해당 메뉴를 선택했던 사람의 수에 따라 점수를 표시하고 누적되게 하였다.
+                                    <div>
+                                        <video class="phone" src="./profile/cafeteria.mp4"  controls style="max-width:419px; width:100%; "></video>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/13">Wedding invitation</a></b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Aug 2017</h6>
+                                <p> - Skills : Html, CSS, Jquery</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="weddinginvit"></p>
+                                <div id="weddinginvit" class="hidden disappear">
+                                   <!-- I made this to make my wedding ceremony more special. It introduced about the ceremony, showed some wedding pictures and let people make some congratulation messages.
+                                    -->
+                                    결혼식의 초대장을 직접 제작하여 좀 더 특별하게 만들고 싶어 시작하였다. 결혼식에 대한 정보 소개, 사진 표시 및 댓글 남기기 기능들을 넣었다.
+                                    <div>
+                                        <video class="phone" src="./profile/wedding.mp4"  controls style="max-width:419px; width:100%; "></video>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Release Helper</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Mar 2015</h6>
+                                <p> - Skills : C#(.Net Framework)</p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="relaeseHelper"></p>
+                                <div id="relaeseHelper" class="hidden disappear">
+                                   <!-- Windows form based program. Release Helper can find any files by using unique keyword. backup server files.
+                                    <br>I made this to use at work. With some reasons, I couldn't use CI/CD solutions to the system. So every deployment was not safe. 
+                                    Because I had to be carefule not forget the source codes that I modified.
+                                    <br>So I made a program that finds modified source code and make the same directory structure like production server.
+                                    What I just did after using this program, just copy and paste. It gauranted source code deployed well so I could spend time other duties.
+                                    -->
+                                    윈도우 프로그램으로 CI/CD를 사용할 수 없는 Legacy 시스템을 위해 개발하였다. 프로그램 수정을 할 때 어떤 요청으로 수정을 하는지
+                                    그 요청 번호를 주석으로 남기는데 변경된 파일만 서버로 반영해야 하기 때문에 휴먼 에러가 발생하기 쉽다. 이를 방지하기 위해 요청 번호로
+                                    변경된 프로그램 소스파일을 검색하고 해당 파일에 의해 컴파일된 파일을 찾아 서버와 같은 폴더 스트럭처를 구성해준다.
+                                    <img src="./profile/add8.jpg" style="width:100%">
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Chonnam National University Application</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
+                                <p> - Skills : Java(Android, EE), SQL(MySQL) </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="andCNU"></p>
+                                <div id="andCNU" class="hidden disappear">
+                                    <p> 전남대학교측의 요청으로 학생들을 위한 안드로이드 어플리케이션입니다. 학교 공지사항, 커뮤니티, 개인시간표, 성적관리, 식단표 등을 개발하였다. </p>
+                                    <img src="./profile/add3.jpg" style="width:100%">
+                                </div>
+                                
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>QUICKS Application</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Dec 2012</h6>
+                                <p> - Skills : Java(Android), SQL(SQLITE3) </p>
+                                <p class="w3-tag w3-dark-grey w3-round short" data-target="quicks"></p>
+                                <div id="quicks" class="hidden disappear">
+                                    <p> 일정을 관리할 수 있는 안드로이드 어플리케이션을 개발하였다. </p>
+                                    <img src="./profile/add4.jpg" style="width:100%">
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h3 class="w3-text-grey w3-padding-16 trigger" data-target="workExp"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Work History
+                        <i class="fas fa-chevron-down" style="margin-left: 5px; position: relative;top: 3px;"></i>
+                    </h3>
+                    <div class="hidden disappear" id="workExp">
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Software Developer / Changshin INC, South Korea</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                            <p></p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Software Developer / Sejung INC, South Korea</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Apr 2020</h6>
+                            <p></p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Programming Analyst / LG CNS, South Korea</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2013 - Aug 2018</h6>
+                            <p></p>
+                            <hr>
+                        </div>
+                        <div class="more trigger" data-target="oldWorkExp">
+                            <span class="w3-tag w3-teal w3-round-xlarge w3-small">More</span>
+                        </div>
+                        <div id="oldWorkExp" class="hidden disappear" >
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Social Services / EMMAUS WELFARE CENTER, South Korea</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2012 - Jan 2013</h6>
+                                <p>Aide for the Developmentally Disabled.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Coast Guard / South Korean Military, South Korea</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2007 - May 2009</h6>
+                                <p> </p><br>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h3 class="w3-text-grey w3-padding-16 trigger" data-target="eductaion"><i class="fa fa-certificate fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Education
+                        <i class="fas fa-chevron-down" style="margin-left: 5px; position: relative;top: 3px;"></i>
+                    </h3>
+                    <div class="w3-container hidden disappear" id="eductaion">
+                        <h5 class="w3-opacity"><b>Chonnam National University, South Korea</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2006 - Feb 2013</h6>
+                        <p>Computer Engineering</p>
                         <hr>
                     </div>
                 </div>
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>수상</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>코드몬스터 : LG CNS 알고리즘 경진대회</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018.01</h6>
+                    <h3 class="w3-text-grey w3-padding-16 trigger" data-target="award"><i class="fa fa-certificate fa-fw w3-margin-right w3-xlarge w3-text-teal"></i>Award
+                        <i class="fas fa-chevron-down" style="margin-left: 5px; position: relative;top: 3px;"></i>
+                    </h3>
+                    <div class="w3-container hidden disappear"  id="award">
+                        <h5 class="w3-opacity"><b>CODE MONSTER : Algorithm Competition by LG CNS</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018</h6>
                         <img src="profile/code_monster.jpg" style="width:100%; max-width: 550px"/>
-                        <hr>
-                    </div>
-                </div>
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>프로젝트</h2>
-                    <div class="w3-container" style="display: none">
-                        <h5 class="w3-opacity"><b>Blank</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-                        <p>Blank</p>
-                        <p> - Skills : Blank
-                            <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS 공정거래 포탈 시스템 개발 </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018.05 - 2018.08</h6>
-                        <p>LG CNS와 협력업체간 기술자료 공유를 위한 시스템을 개발하였습니다. 공정거래법에 대응하기 위해 만들어진 시스템으로 주 역할은 PM이었습니다.</p>
-                        <p> - 사용기술 : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL)
-                            <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS LearningPlus 개발 </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018.04 - 2018.06</h6>
-                        <p>LG CNS 사내 교육시스템 개발에 참여하였습니다. 웹표준, 외부기관 연계, 성능 이슈등을 담당하였습니다.</p>
-                        <p> - 사용기술 : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL)
-                            <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS 통합 포탈 시스템 유지보수 </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.10 - 2018.05</h6>
-                        <p>LG CNS의 통합 포탈 시스템을 유지보수하였습니다. 임직원 일정관리 모듈, 회의실 예약관리 모듈, 협업관리 모듈 등을 담당하였습니다.</p>
-                        <p> - 사용기술 : C#, Java (Spring Framework, Struts), JavaScript (jQuery), SQL(MSSQL)
-                            <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS 통합 포탈 시스템 개발</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.06 - 2017.10</h6>
-                        <p> 1. JSTree를 사용한 사내 조직도 개발모듈 담당하였습니다.</p>
-                        <p> - 사용기술 : Java (Spring Framework), JavaScript (jQuery), SQL(MSSQL) </p>
-                        <img src="./profile/add1.jpg" style="width:100%; max-width: 550px">
-                        <p> 2. 임직원 일정관리 시스템과 MS Outlook Server간 연계모듈 개발 담당하였습니다.</p>
-                        <p> - 사용기술 : C#(.Net Framework), SQL(MSSQL) </p>
-                        <img src="./profile/add2.jpg" style="width:100%; max-width: 550px">
-                        <p> 3. 임직원 일정관리 시스템과 회의실 태블릿PC 연동모듈 개발 담당하였습니다. </p>
-                        <p> - 사용기술 : Java(Devon Framework), SQL(MSSQL), JavaScript </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS PLM (Procuct Lifecycle Management) 시스템 유지보수</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015.01 - 2017.06</h6>
-                        <p> ATM 제품 수명관리 시스템 유지보수하였습니다. 부품 생산, 도면, 생산 내역, 품질관리, ERP연계 모듈 등을 담당하였습니다.</p>
-                        <p> - 사용기술 : Java(Devon Framework), SQL(Oracle)</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS MFG(Manufacturing) 시스템 유지보수</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015.01 - 2017.06</h6>
-                        <p> ATM 생산관리 시스템을 유지보수하였습니다. 금형 생산, 부품 구매, 세금계산서, ERP연계, PDA모듈 등을 담당하였습니다.</p>
-                        <p> - 사용기술 : C#(.Net Compact Framework), Java(Devon Framework), SQL(Oracle), X-Internet(Trustform) </p>
-                        <img src="./profile/add5.jpg" style="width:100%">
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS X-NET 시스템 유지보수</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015.01 - 2017.06</h6>
-                        <p> 1. ATM 부품 해외구매 시스템 유지보수하였습니다. 수입부품 통관, 관세, ERP연계 모듈 등을 담당하였습니다. </p>
-                        <p> - 사용기술 : Java(Devon Framework), SQL(Oracle) </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LG CNS VIVAPOST 솔루션 개발</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013.04 - 2015.01</h6>
-                        <p> 우편물류 솔루션 VIVAPOST의 PDA모듈을 개발했습니다. 택배접수, 배달, 운송 프로세스, 택배 추적, 직원관리 등을 담당하였습니다. </p>
-                        <p> - 사용기술 : C#(.Net Compact Framework), Java(Devon Framework) ,SQL(MSSQL, SQLITE) </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>우정사업본부 인터넷 우체국 안드로이드 어플리케이션 유지보수</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013.04 - 2013.08</h6>
-                        <p> 안드로이드 프로그램 유지보수하였습니다. 회원관리, SMS연동 등 전반적인 모듈을 담당하였습니다. </p>
-                        <p> - 사용기술 : Java(Android) </p>
-                        <hr>
-                    </div>
-
-                </div>
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cubes fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>개인 프로젝트</h2>
-                    <div class="w3-row w3-container">
-                        <div class="w3-col l6 m6 w3-white w3-padding-16">
-                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/15">냉장고 관리</a></b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018.09 - 2018.09</h6>
-                            <p>Tistory 블로그 Api를 활용해 냉장고 음식물 관리하는 프로그램입니다. 별도의 서버 없이 댓글 내용을 파싱하여 사용합니다.</p>
-                            <p> - 사용기술 : Jquery, Web Speech API</p>
-                            <div style="padding-left: 0px;padding-top: 40px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                <iframe src="http://5789.tistory.com/15" style="width: 275px;height: 430px; border: 0px"></iframe>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="w3-col l6 m6 w3-white w3-padding-16">
-                            <h5 class="w3-opacity"><b><a href="http://gavinlab.com/magok/menu">메뉴 조회</a></b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018.01 - 2018.02</h6>
-                            <p>LG그룹 마곡개발단지 식당 메뉴 조회 프로그램입니다. html파싱, 이미지 리사이징을 사용하여 개발되었습니다.</p>
-                            <p> - 사용기술 : Java(Spring), Jquery</p>
-                            <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                <iframe src="http://gavinlab.com/magok/menu" style="width: 242px;height: 460px; border: 0px"></iframe>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="w3-col l6 m6 w3-white w3-padding-16">
-                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/13">결혼 청첩장</a></b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.08 - 2017.08</h6>
-                            <p> - 사용기술 : Html, CSS, Jquery</p>
-                            <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                <div class="scrollable" style="width: 242px;height: 440px;">
-                                <iframe src="http://5789.tistory.com/13" style="width: 242px;height: 440px; border: 0px"></iframe>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="w3-col l6 m6 w3-white w3-padding-16">
-                            <h5 class="w3-opacity"><b><a href="http://5789.tistory.com/14">공연 초대장</a></b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017.11 - 2017.11</h6>
-                            <p> - 사용기술 : Html, CSS, Jquery</p>
-                            <div style="padding-left: 10px;padding-top: 35px;  background-image: url(./profile/smartphone_960_720_large.png); width: 300px; height: 574px;background-repeat: no-repeat">
-                                <div class="scrollable" style="width: 242px;height: 440px;">
-                                <iframe src="http://5789.tistory.com/14" style="width: 242px;height: 440px; border: 0px"></iframe>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>반영기</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015.01 - 2015.03</h6>
-                        <p> CI 모듈을 설치할 수 없는 프로그램을 위한 릴리즈 프로그램입니다. FTP, Network Drive를 지원하며 키워드 기반으로 파일들을 검색하여 설정에 맞는 서버에 릴리즈를 쉽게 할 수 있도록 도와주는 프로그램입니다.</p>
-                        <p> - 사용기술 : C#(.Net Framework)</p>
-                        <img src="./profile/add8.jpg" style="width:100%">
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>전남대학교 안드로이드 어플리케이션</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012.06 - 2012.09</h6>
-                        <p> 전남대학교측의 요청으로 학생들을 위한 안드로이드 어플리케이션입니다. 학교 공지사항, 커뮤니티, 개인시간표, 성적관리, 식단표 등을 개발하였습니다. </p>
-                        <p> - 사용기술 : Java(Android, EE), SQL(MySQL) </p>
-                        <img src="./profile/add3.jpg" style="width:100%">
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>퀵스</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012.04 - 2012.06</h6>
-                        <p> 일정을 관리할 수 있는 안드로이드 어플리케이션입니다.</p>
-                        <p> - 사용기술 : Java(Android), SQL(SQLITE3) </p>
-                        <img src="./profile/add4.jpg" style="width:100%">
                         <hr>
                     </div>
                 </div>
@@ -295,7 +783,42 @@
         <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
     </footer>
+    <script>
+        window.onload = () => {
+            document.querySelectorAll('.trigger').forEach((elem)=>{
+                elem.addEventListener('click', function(){
+                    let target = document.querySelector('#'+this.dataset.target);
+                    let span = this.querySelector('span');
+                    let chevronDown = this.querySelector('i.fa-chevron-down');
+                    if(target.classList.contains('disappear')){
+                        target.classList.remove('disappear');
+                        //target.classList.remove('hidden');
+                        target.classList.add('appear');
+                        if(span) span.textContent = 'Less';
+                        if(chevronDown) chevronDown.classList.remove('flipdown');
+                        if(chevronDown) chevronDown.classList.add('flipup');
+                    }else{
+                        target.classList.remove('appear');
+                        target.classList.add('disappear');
+                        //setTimeout(()=>{target.classList.add('hidden');},1500);
+                        
+                        if(span) span.textContent = 'More';
+                        if(chevronDown) chevronDown.classList.remove('flipup');
+                        if(chevronDown) chevronDown.classList.add('flipdown');
+                    }
+                });
+            });
 
+            document.querySelectorAll('.short').forEach((elem)=>{
+                elem.addEventListener('click', function(){
+                    let target = document.querySelector('#'+this.dataset.target);
+                    target.classList.remove('disappear');
+                    target.classList.add('appear');
+                    this.style.display = 'none';
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>

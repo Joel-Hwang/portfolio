@@ -156,8 +156,8 @@ to {
 }
 </style>
 <script>
-    if( (navigator.language || navigator.userLanguage) == 'ko-KR' ){
-       // window.location.href = "./index_ko.html";    
+    if( (navigator.language || navigator.userLanguage).indexOf('ko')>=0 ){
+        window.location.href = "./index_ko.html";    
     }
 </script>
 <body class="w3-light-grey">
@@ -173,7 +173,7 @@ to {
 
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
-                        <img src="./profile/profile.jpg" style="width:100%" alt="Gavin Hwang">
+                        <img src="./profile/profile.jpg" style="width:100%" alt="Joel Hwang">
                         <div class="w3-display-middle w3-display-left w3-container w3-text-black">
 
                             <h2 lang="Korea">Joel Hwang</h2>
@@ -795,6 +795,8 @@ to {
     </footer>
     <script>
         window.onload = () => {
+
+
             document.querySelectorAll('.trigger').forEach((elem)=>{
                 elem.addEventListener('click', function(){
                     let target = document.querySelector('#'+this.dataset.target);

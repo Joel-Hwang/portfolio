@@ -33,8 +33,8 @@
 }
 
 .hidden {
-  /*display: none;
-  opacity: 0;*/
+  display: none;
+  opacity: 0;
 }
 
 .appear {
@@ -44,7 +44,7 @@
 }
 
 .disappear {
-  /*animation: fade-out 1s;*/
+  animation: fade-out 1s;
   animation-fill-mode: forwards;
 }
 
@@ -154,9 +154,8 @@ to {
 }
 </style>
 <script>
-    if( (navigator.language || navigator.userLanguage).indexOf('ko')>=0 ){
+    if( (navigator.language || navigator.userLanguage).indexOf('ko')>=0 )
         window.location.href = "./index_ko.html";    
-    }
 </script>
 <body class="w3-light-grey">
 
@@ -175,10 +174,10 @@ to {
                         <div class="w3-display-middle w3-display-left w3-container w3-text-black">
 
                             <h2 lang="Korea">Joel Hwang</h2>
-                        </div>
+                        </div>  
                     </div>
                     <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Programmer</p>
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Fullstack Software Engineer</p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Milwaukee,WI</p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>joel.c.hwang@gmail.com</p>
                         <p><i class="fab fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/Joel-Hwang">https://github.com/Joel-Hwang</a></p>
@@ -238,29 +237,6 @@ to {
                                 <p>- What : Developed MS Excel Add-in Program for deliverables digitalization</p> 
                                 <p>- Why : To make data driven decisions and reuse data</p> 
                                 <p>- Role : Suggestion, System Design, Development, Operation</p> 
-                                <!--
-                                I participated in the project that makes microsoft office add-in programs for the deliverables documents by production developing.
-                                <br> I suggested to use office add-in programs and I was in charge of system design, developing and maintenance.
-                                <br><br> The company has some needs to use the data from the deliverables for making business decisions. For that we need to provide better user experiences and collect valid data for the needs.
-                                First of all, we designed the office add-in programs like smart phone applications to provide better user experiences.
-                                <br>And we also made web based applications to show the deliverables preview and collected data to help business decisions.
-                                <br><br>
-                                At first, we just made web applications that the users can input data. It worked well to collect data but the users had to give up the convinient functions in MS office programs.
-                                It made terrible work efficiency and it was hard to update the programs because the deliverables format was changed frequently. 
-                                <br>So we decided to make MS office add-in programs that users still can use MS office programs and they would be more convinient.
-                                <br> As a result, the users could make the documents easily and we collected data for data driven decision.
-                                -->
-                                <!--
-                               제품 개발 과정에서 나온 산출물 문서들을 전산화 하기 위해 엑셀 등의 오피스 프로그램에 애드 인 기능을 추가하는 프로젝트를 수행하였다.
-                               이 프로젝트에서 제안, 설계, 개발, 운영을 담당하였다.
-
-                            산출물의 데이터를 사용하여 Data에 기반한 의사결정을 위해 진행된 프로젝트였고 기존 오피스 프로그램을 사용할 때보다 더 나은 사용자 경험을 제공하면서 의사결정에 도움줄 수 있는
-                            의미있는 데이터를 수집해야 했다. 사용자에게 익숙한 경험을 제공하기 위해 스마트폰 애플리케이션과 유사한 형태의 레이아웃을 선택하였으며 수집된 데이터를 효과적으로 보여주기 위해
-                            웹 기반 프로그램을 따로 제작하였다.
-
-                                처음에는 엑셀 등의 프로그램에서 입력하던 데이터를 바로 웹 브라우저에서 입력할 수 있도록 프로그램을 제작하였으나 엑셀에서 제공하는 입력 편의 기능등을 포기하니 사용자의 작업 효율이
-                            현저하게 떨어지고 빈번하게 변경되는 산출물의 포맷을 대응하는게 무리라고 판단하여 오피스 프로그램의 포맷을 그대로 가져가면서 데이터 수집에 필요한 기능만 추가하여 사용자 경험을 헤치지 않고
-                            데이터도 목적에 맞게 수집할 수 있었다. -->
                                 <div>
                                     <video poster="./profile/white.png" src="./profile/addinsample.mp4" width="100%" controls></video>
                                 </div>
@@ -271,30 +247,11 @@ to {
                             <h5 class="w3-opacity"><b>KPI(Key Performance Indicator) System</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020 - Apr 2020</h6>
                             <p> - Skills : Golang, NodeJS, Javascript, Couch DB</p>
-                            <p class="w3-tag w3-dark-grey w3-round short" data-target="kpi"></p>
-                            <div id="kpi" class="hidden disappear">
+                            <p class="w3-tag w3-dark-grey w3-round short" data-target="kpiDetail"></p>
+                            <div id="kpiDetail" class="hidden disappear">
                                 <p>- What : Developed Web and Blockchain based Program</p> 
                                 <p>- Why : To make fair evaluate employees and keep their private data</p> 
                                 <p>- Role : System Design, Development</p> 
-                                <!--
-                                I participated in the kpi management system. The managers evaluates the employers performance every year based on the company rules. 
-                                <br>I was in charge of planning, system design and developing. 
-                                <br><br>The kpi data of employers should be private. So unauthorized people should't retrieve the data even the system manager.
-                                And we chose Hyperledger fabric, a private blockchain to prevent manipulate data.
-                                <br> We made the evaluation data as a block and then have trusted organizations have the same ledger to increase data reliability 
-                                and use an asymmetric key-based encryption algorithm so that even system administrators cannot retrive private data.
-                                <br>Also almost of the employers are outsorcing developers so we made a survey program for the clients.
-                                -->
-                                <!--임직원들의 성과를 평가할 수 있는 KPI 시스템 구축 프로젝트를 수행하였다.
-                                이 프로젝트에서 기획, 설계, 개발을 담당하였다.
-
-                                성과 평가 결과는 임직원에게 매우 중요한 데이터이기 때문에 시스템 관리자라고 할지라도 허가된 외의 인원이 조회할 수 없어야 했다. 그리고 데이터 조작에 대한
-                                가능성을 줄이기 위해 프라이빗 블록체인 플랫폼인 하이퍼레저 패브릭을 사용하여 프로젝트를 진행하였다.
-                                
-                                평가 데이터를 블록화한 후 신뢰할 수 있는 기관들이 동일한 원장을 갖게 함으로써 데이터 신뢰성을 높이고 비대칭키 기반의 암호화 알고리즘을 사용하여 관리자라고 할지라도
-                                개인의 민감 데이터를 조화할 수 없도록 설계하였다.
-                                
-                                또한 임직원들이 아웃소싱 개발을 주 업무로 하였기 때문에 외부 클라이언트에 의한 평가를 위해설문조사 시스템도 함께 개발하였다.-->
                                 <div>
                                     <video poster="./profile/white.png" src="./profile/kpi.mp4" width="100%" controls></video>
                                 </div>
@@ -310,23 +267,6 @@ to {
                                 <p>- What : Developed shell script for installing docker based gitlab, redmine, jenkins </p> 
                                 <p>- Why : To make policies of deployment, workflow, issue tracks. </p> 
                                 <p>- Role : System Design, Development, Operation</p> 
-                                <!--
-                                I participated in the project that makes company policies about managing software.
-                                <br> I was in charge of system design and developing.
-                                <br><br> I made a shell file to install gitlab, svn, redmine, jenkins set according the the company's rules on docker.
-                                <br> I let the users can choose Svn or Gitlab as a sourcecode repository and choose Redmine as issue tracker system because it support Korean version compared to other issue tracker solutions.
-                                And choose Jenkins as ci/cd tool because it is popular so there are plenty references. And I wrote some deployment script examples.
-                                <br> Also I made a guide document about managing the issues of the project by connecting Redmine and IDE(Eclipse, IntelliJ).
-                                -->
-                                <!--
-                                I made a shell file to install docker, docker-compose, gitlab, redmine, jenkins.
-                                아웃소싱 개발자들이 프로젝트를 잘 수행할 수 있도록 프로젝트 관리정책을 수립하는 프로젝트를 수행하였다.
-                                이 프로젝트에서 설계, 개발을 담당하였다.
-                                
-                                Docker 기반의 미리 설정된 Gitlab, Redmine, Jenkins를 한번에 설치하고 바로 사용할 수 있게 쉘 프로그램 작성 배포하였다.<br>
-                                소스 코드 저장소는 Gitlab과 SVN중 선택할 수 있게 하였으며, 이슈 트랙커는 한글 지원이 비교적 원활한 Redmine을 선택하였다.<br>
-                                그리고 지속적인 배포를 위한 도구로 많이 알려진 Jenkins를 선택하고 CI/CD 배포 스크립트를 제작하였다.
-                                또 자바 IDE인 Eclipse와 IntelliJ를 Redmine 및 Jenkins에 연동하여 프로젝트의 이슈 관리를 효과적으로 할 수 있게 하였다.-->
                                 <div>
                                     <video poster="./profile/white.png" src="./profile/gs25ci.mp4" width="100%" controls></video>
                                 </div>
@@ -347,21 +287,6 @@ to {
                                     <p>- What : Customized Draw.io open source solution</p> 
                                     <p>- Why : To draw graph easily for the users and use the graph data </p> 
                                     <p>- Role : System Design, Development, Operation</p> 
-
-                                    <!--
-                                    I participated in the project that makes diagrams and connected to the legacy systems. To shorten period, We chose draw.io, open source solution that support to draw diagrams.
-                                    <br>I was in charge of the system design and developing.
-                                    <br><br>
-                                    I customized draw.io solution so the users can make a diagram by using the legacy system's data and save the diagram data to the legacy system database.
-                                    <br>
-                                    It seems to be used for work process diagram, factory drawing and company layout. 
-                                    -->
-
-                                    <!--기존 레거시 시스템과 연동할 수 프로세스 도식화 프로그램을 제작하는 프로젝트를 수행하였다. 기간 단축을 위해 프로세스를 쉽게 그릴 수 있고 기존 레서 시스템과 연결도 가능한 draw.io 오픈소스를 선택하였다.
-                                    이 프로젝트에서 설계, 개발을 담당하였다.
-                                     <br>
-                                    기존 레거시 시스템의 데이터를 사용해 입력 편의성을 향상시키고 draw.io의 프로세스 데이터도 DB화 시키기 위해 커스터마이징 하였다. 
-                                    업무 프로세스, 공장 도면, 회사 구조 및 회의실 위치 등 다방면으로 활용 가능해 보인다.-->
                                     <div>
                                         <video poster="./profile/white.png" src="./profile/drawiocustom.mp4" width="100%" controls></video>
                                     </div>
@@ -762,19 +687,19 @@ to {
                     </h3>
                     <div class="hidden disappear" id="workExp">
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Software Developer / Changshin INC, South Korea</b></h5>
+                            <h5 class="w3-opacity"><b>Fullstack Software Engineer / Changshin INC, South Korea</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
                             <p></p>
                             <hr>
                         </div>
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Software Developer / Sejung INC, South Korea</b></h5>
+                            <h5 class="w3-opacity"><b>Blockchain Software Engineer / Sejung INC, South Korea</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Apr 2020</h6>
                             <p></p>
                             <hr>
                         </div>
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Programming Analyst / LG CNS, South Korea</b></h5>
+                            <h5 class="w3-opacity"><b>Fullstack Software Engineer / LG CNS, South Korea</b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2013 - Aug 2018</h6>
                             <p></p>
                             <hr>
@@ -853,8 +778,6 @@ to {
     </footer>
     <script>
         window.onload = () => {
-
-
             document.querySelectorAll('.trigger').forEach((elem)=>{
                 elem.addEventListener('click', function(){
                     let target = document.querySelector('#'+this.dataset.target);
@@ -887,6 +810,11 @@ to {
                     this.style.display = 'none';
                 });
             });
+
+            if(window.location.href.indexOf('#')>0){
+                document.querySelectorAll('.trigger').forEach((elem)=>elem.click());
+                document.querySelectorAll('.short').forEach((elem)=>elem.click());
+            }
         }
     </script>
 </body>
